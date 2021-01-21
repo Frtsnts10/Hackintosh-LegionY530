@@ -43,6 +43,7 @@ Instalation (Big Sur)
 
 
 ——————————————————————————————————————
+
 Clover
 Patching:
 VGA:
@@ -66,6 +67,7 @@ DSDT:
 10. save dan reboot.
 
 ====================================================
+
 OpenCore
 DSDT :
 1. download dcpi manager
