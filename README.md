@@ -49,6 +49,6 @@ Apabila terdapat kerusakan di Laptop anda bukan tanggung jawab saya, saya hanya 
 - [Apple](https://www.apple.com) for macOS.
 - [Acidanthera](https://github.com/acidanthera) untuk kexts yang disediakan.
 - [Hackintosh Lovers](https://t.me/HackintoshLover) sebagai tempat awal mula EFI ini dapat terbentuk.
-- [ChilledHamza] (https://github.com/chilledHamza) sebagai contoh panduan dalam pembuatan EFI.
-- [XiaomGithub] (https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh] sebagai contoh panduan dalam pembuatan EFI.
+- [chilledHamza](https://github.com/chilledHamza) sebagai contoh panduan dalam pembuatan EFI.
+- [xiaoMGithub](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh) sebagai contoh panduan dalam pembuatan EFI.
 - Dan semua pihak yang tidak bisa kami sebutkan satu per satu.
