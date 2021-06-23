@@ -29,6 +29,10 @@ Required BIOS Configration
 # Disclaimer
 Apabila terdapat kerusakan di Laptop anda bukan tanggung jawab saya, saya hanya membagikan EFI ini sebagai patokan dalam pembuatan EFI laptop yang sama spesifikasi nya. Apabila ada yang kurang jelas dapat menghubungi saya di telegram : Chou_10. Terimakasih.
 
+# CATATAN
+Di Tiap Folder ACPI terdapat SSDT-DNVME, itu karena NVME yang saya pakai adalah PM-981.
+<b>UNTUK YANG TIDAK MENGGUNAKAN PM-981 SILAHKAN DIHAPUS SAJA. TERIMAKASIH.<b>
+
 # What's Work??
 - QE/CI Graphics Intel UHD 630
 - CPU Power Management
