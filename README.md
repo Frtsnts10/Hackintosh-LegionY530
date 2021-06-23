@@ -19,15 +19,12 @@ Bootloader yang dipakai pada OS Catalina adalah Clover Build 5137, sedangkan pad
 
 # Settingan BIOS (Advanced BIOS)
 Required BIOS Configration
- • Boot Mode: UEFI
- • Storage Mode: AHCI
- • Secure Boot : Disabled
- • Kernel Debug Serial Port : Legacy UART 
- • Advanced -> Debug settings -> Legacy UART
- • CFG Lock (MSR_E2) : Disabled 
- • Advanced -> Power & Performance -> CPU - Power Management -> View/Configure CPU Lock Options -> CFG Lock
- • DVMT Pre-Allocated Memory : 64MB 
- • Advanced -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Pre-Allocated Memory
+- Boot Mode: UEFI
+- Storage Mode: AHCI
+- Secure Boot : Disabled
+- Kernel Debug Serial Port : Legacy UART (Advanced -> Debug settings -> Legacy UART)
+- CFG Lock (MSR_E2) : Disabled (Advanced -> Power & Performance -> CPU - Power Management -> View/Configure CPU Lock Options -> CFG Lock)
+- DVMT Pre-Allocated Memory : 64MB (Advanced -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Pre-Allocated Memory)
  
 # Disclaimer
 Apabila terdapat kerusakan di Laptop anda bukan tanggung jawab saya, saya hanya membagikan EFI ini sebagai patokan dalam pembuatan EFI laptop yang sama spesifikasi nya. Apabila ada yang kurang jelas dapat menghubungi saya di telegram : Chou_10. Terimakasih.
