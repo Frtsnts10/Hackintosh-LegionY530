@@ -11,8 +11,9 @@
 - Touchpad : Elan I2C HID Controller
 - Screen Size : 15”
 - Display Resolution : FHD (1920x1080)
-- OS Version : 1. macOS Catalina 10.15.7 Build 19H1311 (Latest) 
-               2. macOS BigSur 11.3
+- OS Version : 
+  - macOS Catalina 10.15.7 Build 19H1311 (Latest) 
+  - macOS BigSur 11.3.1 Beta
 
 # Bootloader
 Bootloader yang dipakai pada OS Catalina adalah Clover Build 5137, sedangkan pada BigSur adalah OC 0.7.0
