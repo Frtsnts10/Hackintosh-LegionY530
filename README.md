@@ -31,8 +31,10 @@ Required BIOS Configration
 Apabila terdapat kerusakan di Laptop anda bukan tanggung jawab saya, saya hanya membagikan EFI ini sebagai patokan dalam pembuatan EFI laptop yang sama spesifikasi nya. Apabila ada yang kurang jelas dapat menghubungi saya di telegram : Chou_10. Terimakasih.
 
 # CATATAN
-Di Tiap Folder ACPI terdapat SSDT-DNVME, itu karena NVME yang saya pakai adalah PM-981.
-<b>UNTUK YANG TIDAK MENGGUNAKAN PM-981 SILAHKAN DIHAPUS SAJA. TERIMAKASIH.<b>
+- Di setiap Folder ACPI terdapat SSDT-DNVME, itu karena NVME yang saya pakai adalah PM-981.
+- SSDT-DGPU karena NVIDIA GTX 1050 tidak bisa digunakan di macOS Seri Catalina keatas.
+- Untuk <b> SSDT-NVME dan SSDT-DDGPU <b> adalah hasil saya ambil dari repo xiaoMGithub <b>
+- <b>UNTUK YANG TIDAK MENGGUNAKAN PM-981 SILAHKAN DIHAPUS SAJA. <b> TERIMAKASIH.
 
 # What's Work??
 - QE/CI Graphics Intel UHD 630
