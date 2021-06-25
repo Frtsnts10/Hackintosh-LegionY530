@@ -51,6 +51,7 @@ Apabila terdapat kerusakan di Laptop anda bukan tanggung jawab saya, saya hanya 
 # Not Work??
 - External GPU (NVIDIA GTX1050), disabled.
 - HDMI Port
+- Numpad
 
 # Credits
 - [Apple](https://www.apple.com) for macOS.
