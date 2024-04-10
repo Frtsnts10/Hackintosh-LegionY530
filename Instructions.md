@@ -1,39 +1,24 @@
-Tutorial Y530 (Indonesian)
+<h2>Instalation (Catalina)</h2>
 
-Preparation :
-Required BIOS Configration
- • Boot Mode: UEFI
- • Storage Mode: AHCI
- • Secure Boot : Disabled
- • Kernel Debug Serial Port : Legacy UART 
- • Advanced -> Debug settings -> Legacy UART
- • CFG Lock (MSR_E2) : Disabled 
- • Advanced -> Power & Performance -> CPU - Power Management -> View/Configure CPU Lock Options -> CFG Lock
- • DVMT Pre-Allocated Memory : 64MB 
- • Advanced -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Pre-Allocated Memory
+1. Pilih config2 di Clover GUI
+2. Format Disk -> APFS & GUID partition
+> [!NOTE]
+> Apabila gagal saat selesai Format Disk, ubah tanggal melalui bios ke 09/27/2019.
+3. Install seperti biasa dan tunggu sampai restart sendiri.
+4. Kemudian pencet F12 pilih config, kemudian pilih <b> Boot MacOS Catalina from MacOS Catalina</b>, bukan dari MacOS Catalina Installer.
+5. Tunggu sampai instalasi selesai.
+6. Kemudian pilih <b>Boot MacOS from  nama `driver` kita.
+7. Lanjutkan setting sampai selesai.
+8. Mount EFI menggunakan ESP Mounter Pro (File ada dalam Logo Apple : `Double click icon 'Install MacOS Catalina', kemudian ke Files, ESP Mounter Pro`).
+9. Klik Icon ESP di taskbar atas, pilih `Mount EFI Disk`.
+10. Drag n Drop EFI di Folder USB ke EFI Disk.
+11. `config.plist` pada EFI Disk dihapus, `config2.plist` rename jadi `config plist`.
+12. Selesai.
 
-—————————————————————————————————————
+<h2>Instalation (Big Sur)</h2>
 
-Instalation (Catalina) 
-1. pilih config2 di clover gui
-2. format disk -> apfs & GUID partition
-3. apabila gagal  waktu slsai format disk, ubah tanggal melalui bios (09272019)
-4. install sprti biasa, akan auto restart kemudian pencet f12 pilih config, kemudia pilih boot mac os catalina from ‘mac os catalina, bkn mac os catalina installer’.
-5. kemudian menyelesaikan instalation.
-6. auto restart, pilih boot mac os from ‘nama driver kita’
-7. setting up dan selesai
-8. kemudian mount efi menggunakan esp mounter pro (file ada dalam logo apple : install mac os catalina, kemudian ke files, esp mounter pro)
-9. pencet logo esp di taskbar atas, mount efi disk.
-10. efi folder di usb di copy paste ke efi disk,
-11. kemudian config plist pada efi disk dihapus, config2.plist rename jadi config plist.
-12. selesai
-
-
-=====================================================
-
-Instalation (Big Sur)
-1. di OC GUI, pilih boot mac os installer (biasanya urutan ke 2)
-2. format disk -> apfs & GUID partition
+1. Pada OC GUI, pilih `Boot MacOS Installer` (biasanya urutan ke 2)
+2. Format Disk -> APFS & GUID partition
 3. install sprti biasa, akan auto restart sebanyak 2x, ketika restart, pilih mac os big sur (bkn installer lagi), kedua kali pilih nama driver disk (misal : driver ‘BigSur’)
 4. setting up seperti biasa dan selesai
 5. kemudian mount efi menggunakan esp mounter pro (file ada dalam logo apple : install mac os Big Sur, kemudian ke files, esp mounter pro)
@@ -41,28 +26,30 @@ Instalation (Big Sur)
 7. efi folder di usb di copy paste ke efi disk,
 8. selesai
 
+<h2>Patching (Clover)</h2>
 
-——————————————————————————————————————
+| Patching  |  |
+| ------------- | ------------- |
+| VGA | Buka `config.plist` via Configurator |
+| | Pilih menu device -> Properties, List PCI -> pilih VGA |
+| | Di bawah kanan `Model` -> `Preset` -> `Mojave & Above` |
+| | Saat muncul pop-up pilih Platform dan Device sesuai ID |
+| | Masukkan FrameBuffer : `patch enable(1)`, stolenmen : `00003001`, fbmem : `00009000` |
+| | Save dan restart |
+| DSDT | `F4` dan `Fn+F4` di Bootloader. |
+| | Boot ke MacOS Catalina |
+| | Mount `EFI`, keluarkan File `Origin` dari folder |
+| | File pada Folder Patched dihapus semua |
+| | Download [SSDTTime](https://github.com/corpnewt/SSDTTime), Drag n Drop File `dsdt.aml` dari dalam folder `origin` |
+| | pilih 1,3,4,5,6,7 kemudian enter, ke file result |
+| | pilih file .aml saja masukan ke folder patched. |
+| | Download [ProperTree](https://github.com/corpnewt/ProperTree) |
+| | buka config.plist copy paste patched config (sesuaikan jika oc, ya oc pny, begitu sebaliknya) ke config.plist di efi |
 
-Clover
-Patching:
-VGA:
-1. buka config.plist via configurator
-2. ke menu device -> properties, terus list pci -> pilih VGA. 
-3. Klik kanan di bwh model -> preset -> mojave above
-4. ketika pop up pilih platform dan device sesuai ID. 
-5. Kemudian tmbh framebuffer patch enable(1), stolenmen(00003001), fbmen(00009000)
-6. save dan reboot. 
 
-DSDT:
-1. F4 dan Fn+F4 di bootloader.
-2. boot ke catalina
-3. mount efi, file origin pindah keluar dr efi, 
-4. file patched dihapus semua 
-5. download ssdttime, drag and drop file dsdt.aml dri dlm folder origin , klik 1,3,4,5,6,7 kemudian enter, ke file result 
-6. pilih file .aml saja masukan ke folder patched. 
-7. download propertree 
-8. buka config.plist copy paste patched config (sesuaikan jika oc, ya oc pny, begitu sebaliknya) ke config.plist di efi
+6.  
+7. 
+8. 
 9. centang fixregion dan fix mutex 
 10. save dan reboot.
 
