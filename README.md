@@ -72,4 +72,4 @@
 - [Hackintosh Lovers](https://t.me/HackintoshLover) sebagai tempat awal mula EFI ini dapat terbentuk.
 - [chilledHamza](https://github.com/chilledHamza) sebagai contoh panduan dalam pembuatan EFI.
 - [xiaoMGithub](https://github.com/xiaoMGitHub/LEGION_Y7000Series_Hackintosh) sebagai contoh panduan dalam pembuatan EFI.
-- Dan semua pihak yang tidak bisa kami sebutkan satu per satu.
+- Dan semua pihak yang tidak bisa saya sebutkan satu per satu.
